@@ -19,6 +19,7 @@ import com.samagraassignment.network.RetrofitClient;
 import com.samagraassignment.repository.TimeStamp;
 import com.samagraassignment.utils.Constant;
 import com.samagraassignment.utils.Utils;
+import com.samagraassignment.viewmodal.MainActivityViewModal;
 
 import java.util.List;
 
@@ -35,10 +36,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private static final String TAG = "MainActivity";
     TextView txtStartTimeComment,txtStartTimeApiComment,txtStartTimePost,txtStartTimeApiPost,txtStartTimeTodo,txtStartTimeApiTodo,txtStartTimePhoto,txtStartTimeApiPhoto;
     Button btnComments,btnPost,btnUnixTimestamp,btnPhotos,btnTodos;
+    private MainActivityViewModal mainActivityViewModal;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        mainActivityViewModal = ViewModelProviders.of(this).get(MainActivityViewModal.class);
         txtStartTimeComment=findViewById(R.id.txtStartTimeComment);
         txtStartTimeApiComment=findViewById(R.id.txtStartTimeApiComment);
 
