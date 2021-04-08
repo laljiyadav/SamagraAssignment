@@ -43,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnComments.setOnClickListener(this);
         btnPost.setOnClickListener(this);
+        btnPhotos.setOnClickListener(this);
+        btnTodos.setOnClickListener(this);
 
         mainActivityViewModal.getCommentsApiMutable().observe(this, new Observer<TimeStamp>() {
             @Override
